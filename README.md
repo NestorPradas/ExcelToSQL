@@ -18,43 +18,42 @@ Excel to SQL Importer es una aplicación de interfaz gráfica de usuario (GUI) d
 ## Instalación
 
 1. **Clonar el repositorio**:  
-   ```bash
+    ```bash
    git clone https://github.com/tu-usuario/excel-to-sql-importer.git
    cd excel-to-sql-importer
 
 2. **Instalar dependencias**:
 Ejecuta el siguiente comando para instalar los paquetes necesarios:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+
 
 3. **Configurar archivos YAML** (opcional):
 Crea un archivo config.yaml para almacenar la configuración de conexión a los servidores SQL (en caso de no ser configurado tambien se pueden introducir los datos de conexion en la pantalla de la aplicacion):
 
- ```yaml
-servidor-ejemplo:
-  user: "nombre_usuario"
-  password: "contraseña"
-```
+    ```yaml
+    servidor-ejemplo:
+     user: "nombre_usuario"
+     password: "contraseña"
+
 Crea un archivo defaultvalues.yaml para definir los valores por defecto para las columnas (en caso de no ser creado se preguntara por cada columna que valor debe tener por defecto. Si hay nuevas columnas en la tabla tambien se preguntara el valor por defecto a introducir de estas:
 
-```yaml
-default_values_personas:
-  numIdPaisSii: 0
-  strTitular: ""
-  # Agrega otros valores por defecto según sea necesario
+   ```yaml
+   default_values_personas:
+     numIdPaisSii: 0
+     strTitular: ""
+     # Agrega otros valores por defecto según sea necesario
  
-default_values_proveedores:
-  numIdPaisSii: 0
-  # Agrega otros valores por defecto según sea necesario
-```
-
+   default_values_proveedores:
+     numIdPaisSii: 0
+     # Agrega otros valores por defecto según sea necesario
+   ```
 4. **Ejecutar la aplicación**:
 Ejecuta el script principal para iniciar la aplicación:
-```bash
-python excel_to_sql_importer.py
-```
+   ```bash
+   python excel_to_sql_importer.py
+
 
 5. **Conectar al servidor SQL**:
 Selecciona el servidor de la lista desplegable o ingresa manualmente las credenciales.
