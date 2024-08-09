@@ -73,12 +73,5 @@ Confirma el mapeo para continuar.
 9. **Insertar datos**:
 Los datos serán insertados en la tabla seleccionada, mostrando una barra de progreso durante la operación.
 
-## Estructura del Proyecto
-.
-├── config.yaml
-├── defaultvalues.yaml
-├── excel_to_sql_importer.py
-└── icono.ico
-
 ## Contribuciones
 Las contribuciones son bienvenidas. Por favor, realiza un fork del repositorio y envía un pull request con tus cambios.
